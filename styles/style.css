@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    position: relative;
+    position: sticky; top: 0;
+
+    z-index: 2;
+}
+
+header p {
+    height: 40px;
+    background: #D1891C;
+
+    color: #000;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+
+    padding-left: 5rem;
+
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    height: 100px;
+    background: #00669F;
+
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 2.5rem;
+    font-weight: 400;
+
+    border: 1px solid rgba(0, 0, 0, 0.00);
+    box-shadow: 0px 10px 7px 0px rgba(0, 0, 0, 0.25);
+
+    padding-left: 5rem;
+
+    display: flex;
+    align-items: center;
+}
+
+.Caja_total {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.Caja_imagenes {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.Fondo {
+    width: 75vw;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.Foto {
+    height: 25vw;
+    border-radius: 50%;
+
+    position: absolute;
+    z-index: 1;
+    margin-top: 40%;
+}
+
+.Caja_texto {
+    width: 75vw;
+    height: 45vh;
+
+    background: #F3F3F3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.Nombre {
+    color: #000;
+    /* text-align: center; */
+    font-family: Roboto;
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    line-height: 30px;
+    height: 30px;
+    /* Corregir a medida relativa */
+    margin-top: 8%;
+}
+
+.Parrafo {
+    color: #333;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: 400;
+
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.Boton {
+    color: #F3F3F3;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: normal;
+
+    width: 128px;
+    height: 4vh;
+    flex-shrink: 0;
+
+    border-radius: 7px;
+    background: #00669F;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#heart {
+    font-size: 2rem;
+    color: #cc2424;
+
+    position: absolute;
+    z-index: 1;
+
+    top: 14px;
+    left: 21px;
+}
+
+footer{
+    height: 60px;
+
+    background: #00669F;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    color: #FFF9F9;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.Github{
+    height: 20px;
+    position: absolute;
+    right: 10px;
+}
+
+.Plus{
+    font-size: 40px;
+    color: #00669F;
+    z-index: 3;
+
+    position: fixed;
+    right: 5px;
+    bottom: 45vh;
+}
+
+@media (min-width: 820px) {
+    section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .Caja_total {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .Caja_texto {
+        width: 36vw;
+        height: 30vh;
+    }
+
+    .Fondo {
+        width: 36vw;
+        flex-shrink: 0;
+        border-radius: 16px 16px 0px 0px;
+    }
+
+    .Foto {
+        height: 11vw;
+    }
+}
+
+@media (min-width: 1024px){
+
+    .Caja_texto {
+        width: 36vw;
+        height: 45vh;
+    }
+}
